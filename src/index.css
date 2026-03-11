@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Base surfaces */
+    --background: 160 67% 97%;
+    --foreground: 160 55% 6%;
+    
+    /* Mint palette */
+    --primary: 160 100% 43%;
+    --primary-foreground: 160 55% 6%;
+    --primary-dark: 160 100% 34%;
+    --primary-darker: 160 100% 28%;
+    
+    /* Secondary surfaces */
+    --secondary: 160 40% 96%;
+    --secondary-foreground: 160 35% 30%;
+    
+    /* Muted surfaces */
+    --muted: 160 40% 96%;
+    --muted-foreground: 160 12% 58%;
+    
+    /* Accent */
+    --accent: 160 40% 96%;
+    --accent-foreground: 160 55% 6%;
+    
+    /* Card surfaces */
+    --card: 0 0% 100%;
+    --card-foreground: 160 55% 6%;
+    
+    /* Popover */
+    --popover: 0 0% 100%;
+    --popover-foreground: 160 55% 6%;
+    
+    /* Destructive */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Borders & inputs */
+    --border: 160 30% 91%;
+    --input: 160 30% 91%;
+    --ring: 160 100% 43%;
+    
+    /* Radius */
+    --radius: 0.5rem;
+    
+    /* Custom semantic tokens for NexolPay */
+    --mint-glow: 160 100% 43%;
+    --mint-soft: 160 100% 97%;
+    --mint-line: 160 40% 85%;
+    --ink: 160 55% 6%;
+    --ink-2: 160 45% 10%;
+    --slate: 160 30% 35%;
+    --dim: 160 20% 80%;
+    
+    /* Gradients */
+    --gradient-mint: linear-gradient(135deg, hsl(160 100% 43%), hsl(160 100% 38%));
+    --gradient-dark: linear-gradient(160deg, hsl(160 45% 10%), hsl(160 55% 6%));
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 8px hsl(160 100% 43% / 0.08);
+    --shadow-md: 0 8px 24px hsl(160 100% 43% / 0.12);
+    --shadow-lg: 0 24px 48px hsl(160 50% 20% / 0.15);
+    --shadow-glow: 0 4px 20px hsl(160 100% 43% / 0.22);
+  }
+
+  .dark {
+    --background: 160 55% 6%;
+    --foreground: 160 20% 95%;
+    --primary: 160 100% 43%;
+    --primary-foreground: 160 55% 6%;
+    --card: 160 45% 10%;
+    --card-foreground: 160 20% 95%;
+    --popover: 160 45% 10%;
+    --popover-foreground: 160 20% 95%;
+    --secondary: 160 25% 20%;
+    --secondary-foreground: 160 20% 95%;
+    --muted: 160 25% 20%;
+    --muted-foreground: 160 15% 65%;
+    --accent: 160 25% 20%;
+    --accent-foreground: 160 20% 95%;
+    --border: 160 25% 20%;
+    --input: 160 25% 20%;
+    --ring: 160 100% 43%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+  }
+  
+  /* Noise texture overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+    background-size: 256px;
+    mix-blend-mode: multiply;
+    opacity: 0.5;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--background));
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary));
+    border-radius: 2px;
+  }
+}
+
+@layer utilities {
+  /* Animation keyframes */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  @keyframes float-delayed {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+  }
+  
+  @keyframes pulse-glow {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.7); }
+  }
+  
+  @keyframes drift-a {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(-40px, 60px) scale(1.1); }
+    66% { transform: translate(30px, -30px) scale(0.95); }
+  }
+  
+  @keyframes drift-b {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(50px, -40px) scale(1.08); }
+  }
+  
+  @keyframes ticker {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  
+  .animate-float {
+    animation: float 7s ease-in-out infinite;
+  }
+  
+  .animate-float-delayed {
+    animation: float-delayed 9s ease-in-out infinite;
+  }
+  
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+  
+  .animate-drift-a {
+    animation: drift-a 18s ease-in-out infinite;
+  }
+  
+  .animate-drift-b {
+    animation: drift-b 22s ease-in-out infinite;
+  }
+  
+  .animate-ticker {
+    animation: ticker 30s linear infinite;
+  }
+}
