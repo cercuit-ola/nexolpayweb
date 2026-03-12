@@ -31,18 +31,18 @@ const Index = () => {
 
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-mint-soft border border-mint-line font-mono text-[10px] font-semibold text-primary-dark tracking-[2px] uppercase mb-6 animate-fade-in">
           <div className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse-glow" />
-          Financial Infrastructure · West Africa
+          Your Money, Your Rules · Built for Africa
         </div>
 
         <h1 className="font-display text-[clamp(40px,10vw,72px)] md:text-[clamp(52px,7vw,80px)] font-extrabold leading-[1.04] tracking-[-2.5px] md:tracking-[-3px] text-foreground mb-5 animate-fade-in">
-          Redeem.<br />
-          Convert.<br />
-          <span className="bg-gradient-to-r from-primary-dark to-primary bg-clip-text text-transparent">Move.</span>
+          Turn gift cards<br />
+          into real<br />
+          <span className="bg-gradient-to-r from-primary-dark to-primary bg-clip-text text-transparent">money.</span>
         </h1>
 
         <p className="text-[clamp(15px,3.5vw,18px)] font-light text-slate leading-[1.75] max-w-[520px] mx-auto mb-9 animate-fade-in">
-          Gift cards to USDT in <strong className="text-foreground font-medium">60 seconds</strong>. Crypto off-ramp to your bank.
-          Income scheduler that locks your salary until you earn access to it.
+          Sell gift cards for <strong className="text-foreground font-medium">fair rates in 60 seconds</strong>. Cash out crypto straight to your bank account.
+          Set up a savings plan that actually stops you from overspending.
         </p>
 
         <div className="flex flex-wrap gap-3 justify-center mb-12 animate-fade-in">
@@ -50,22 +50,22 @@ const Index = () => {
             href="#waitlist"
             className="inline-flex items-center gap-2 px-[30px] py-[15px] rounded-full bg-gradient-to-br from-primary to-primary-dark text-white font-display text-[15px] font-bold tracking-wide shadow-[0_8px_32px_var(--mint-glow),_0_2px_0_rgba(255,255,255,0.3)_inset] hover:-translate-y-[3px] hover:shadow-[0_14px_48px_var(--mint-glow)] transition-all duration-300"
           >
-            Join the Waitlist →
+            Get Early Access →
           </a>
           <a
             href="#features"
             className="inline-flex items-center px-7 py-[15px] rounded-full bg-white/70 border-[1.5px] border-mint-line text-primary-dark font-display text-[15px] font-semibold backdrop-blur-sm hover:bg-white hover:border-primary transition-all duration-300"
           >
-            See Features
+            How It Works
           </a>
         </div>
 
         <div className="flex items-center gap-4 flex-wrap justify-center text-xs text-muted-foreground mb-12 animate-fade-in">
-          <span className="flex items-center gap-1.5">⚡ 60s redemption</span>
+          <span className="flex items-center gap-1.5">⚡ Instant gift card payouts</span>
           <span className="w-1 h-1 rounded-full bg-dim" />
-          <span className="flex items-center gap-1.5">🔒 Hard-lock savings</span>
+          <span className="flex items-center gap-1.5">🔒 Auto-save your salary</span>
           <span className="w-1 h-1 rounded-full bg-dim" />
-          <span className="flex items-center gap-1.5">🌍 Built for Africa</span>
+          <span className="flex items-center gap-1.5">🌍 Made for Nigerians</span>
         </div>
 
         {/* Phone stack */}
@@ -171,17 +171,17 @@ const Index = () => {
       <section className="py-20 md:py-24 px-5 relative z-10">
         <div className="max-w-[480px] md:max-w-[600px] mx-auto">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-mint-soft border border-mint-line font-mono text-[9px] font-semibold text-primary-dark tracking-[2.5px] uppercase mb-4">
-            The Problem
+            Why This Matters
           </div>
           <h2 className="font-display text-[clamp(30px,7vw,44px)] font-extrabold tracking-[-1.5px] leading-[1.07] text-foreground mb-3.5">
-            Africa's financial rails are broken. We're fixing them.
+            Managing money in Nigeria shouldn't be this hard.
           </h2>
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mt-12">
             {[
-              { num: '$900M', text: "Nigeria's annual gift card market — 73% traded through WhatsApp traders charging 35–50% haircuts with zero protection.", src: 'Industry estimates, 2024', span: true },
-              { num: '57%', text: 'of Nigerian salary earners exhaust monthly income in week one — before bills, savings, or emergencies.', src: 'EFInA Financial Report, 2023' },
-              { num: '$400M', text: 'monthly P2P crypto volume in Nigeria, with no reliable formal offramp since the 2024 CBN-Binance shutdown.', src: 'Chainalysis, 2024' },
+              { num: '$900M', text: "worth of gift cards are traded in Nigeria every year — most through informal WhatsApp dealers who take 35–50% of your value.", src: 'Industry estimates, 2024', span: true },
+              { num: '57%', text: 'of salary earners run out of money in the first week of the month — no buffer for bills, emergencies, or savings.', src: 'EFInA Financial Report, 2023' },
+              { num: '$400M', text: "in crypto changes hands monthly in Nigeria, but there\u2019s still no easy, reliable way to convert it to Naira.", src: 'Chainalysis, 2024' },
             ].map((s, i) => (
               <div
                 key={i}
@@ -202,13 +202,13 @@ const Index = () => {
         <div className="max-w-[640px] mx-auto">
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-mint-soft border border-mint-line font-mono text-[9px] font-semibold text-primary-dark tracking-[2.5px] uppercase mb-4">
-              Core Features
+              What NexolPay Does
             </div>
             <h2 className="font-display text-[clamp(30px,7vw,44px)] font-extrabold tracking-[-1.5px] leading-[1.07] text-foreground mb-3.5">
-              Three features.<br />One closed loop.
+              Three tools to take<br />control of your money.
             </h2>
             <p className="text-base font-light text-slate leading-[1.75]">
-              Gift cards in. USDT credited. Naira in your bank. Salary locked until you've earned it.
+              Sell gift cards instantly. Send crypto to your bank. Save smarter with auto-locked vaults.
             </p>
           </div>
 
@@ -218,9 +218,9 @@ const Index = () => {
               <div className="p-6 flex items-start gap-4">
                 <div className="w-[52px] h-[52px] rounded-2xl flex items-center justify-center text-2xl flex-shrink-0 bg-gradient-to-br from-mint-soft to-primary/[0.04] border border-mint-line shadow-[0_4px_16px_rgba(0,217,139,0.12)]">🎁</div>
                 <div>
-                  <div className="font-mono text-[9px] text-primary tracking-[2px] uppercase mb-1">01 · Gift Card Redemption</div>
-                  <h3 className="font-display text-lg font-extrabold text-foreground tracking-[-0.5px] leading-tight mb-2">USDT in<br />60 seconds.</h3>
-                  <p className="text-sm text-slate leading-[1.68] font-light">Nigeria's $900M gift card market runs through WhatsApp traders charging 35–50% haircuts. NexolPay automates the entire pipeline — verify, redeem, credit — in under <strong className="text-foreground font-medium">60 seconds</strong>. Transparent 20% fee. Still better than the streets.</p>
+                  <div className="font-mono text-[9px] text-primary tracking-[2px] uppercase mb-1">01 · Sell Gift Cards</div>
+                  <h3 className="font-display text-lg font-extrabold text-foreground tracking-[-0.5px] leading-tight mb-2">Got a gift card?<br />Get paid in 60 seconds.</h3>
+                  <p className="text-sm text-slate leading-[1.68] font-light">No more hunting for buyers on WhatsApp or getting ripped off by middlemen. Upload your gift card, we verify it instantly, and you get <strong className="text-foreground font-medium">USDC (digital dollars) in your wallet in under a minute</strong>. One flat 20% fee — transparent and fair.</p>
                 </div>
               </div>
               <div className="px-6 pb-5 flex gap-1.5 flex-wrap">
@@ -252,9 +252,9 @@ const Index = () => {
               <div className="p-6 flex items-start gap-4">
                 <div className="w-[52px] h-[52px] rounded-2xl flex items-center justify-center text-2xl flex-shrink-0 bg-gradient-to-br from-mint-soft to-primary/[0.04] border border-mint-line shadow-[0_4px_16px_rgba(0,217,139,0.12)]">💸</div>
                 <div>
-                  <div className="font-mono text-[9px] text-primary tracking-[2px] uppercase mb-1">02 · Crypto Off-Ramp</div>
-                  <h3 className="font-display text-lg font-extrabold text-foreground tracking-[-0.5px] leading-tight mb-2">USDT to Naira.<br />Any bank. Minutes.</h3>
-                  <p className="text-sm text-slate leading-[1.68] font-light">Nigeria's formal offramp collapsed in 2024 after the CBN-Binance shutdown. We are the <strong className="text-foreground font-medium">institutional-grade replacement</strong>. Convert USDC to NGN and receive it in GTBank, Access, Zenith — any account. Live rates. Full receipt. No P2P risk.</p>
+                  <div className="font-mono text-[9px] text-primary tracking-[2px] uppercase mb-1">02 · Cash Out Crypto</div>
+                  <h3 className="font-display text-lg font-extrabold text-foreground tracking-[-0.5px] leading-tight mb-2">Send crypto to<br />your bank account.</h3>
+                  <p className="text-sm text-slate leading-[1.68] font-light">Have USDC or other crypto? Convert it to Naira and <strong className="text-foreground font-medium">receive it in any Nigerian bank account in minutes</strong> — GTBank, Access, Zenith, you name it. Live exchange rates, full receipt, no shady P2P deals.</p>
                 </div>
               </div>
               <div className="px-6 pb-5 flex gap-1.5 flex-wrap">
@@ -291,9 +291,9 @@ const Index = () => {
               <div className="p-6 flex items-start gap-4">
                 <div className="w-[52px] h-[52px] rounded-2xl flex items-center justify-center text-2xl flex-shrink-0 bg-gradient-to-br from-mint-soft to-primary/[0.04] border border-mint-line shadow-[0_4px_16px_rgba(0,217,139,0.12)]">🔒</div>
                 <div>
-                  <div className="font-mono text-[9px] text-primary tracking-[2px] uppercase mb-1">03 · Income Scheduler + Vault</div>
-                  <h3 className="font-display text-lg font-extrabold text-foreground tracking-[-0.5px] leading-tight mb-2">Pay yourself.<br />Lock the rest.<br />Earn on the wait.</h3>
-                  <p className="text-sm text-slate leading-[1.68] font-light">Deposit your salary. Choose your payout rhythm — weekly, monthly, or lock for 6 months or 1 year. Hard-locked on Base. No early access. No override. And your 6-month and 1-year locks earn <strong className="text-foreground font-medium">onchain yield via Aave on Base</strong> — passive income for ordinary African salary earners.</p>
+                  <div className="font-mono text-[9px] text-primary tracking-[2px] uppercase mb-1">03 · Smart Savings Vault</div>
+                  <h3 className="font-display text-lg font-extrabold text-foreground tracking-[-0.5px] leading-tight mb-2">Stop spending<br />your salary in<br />one week.</h3>
+                  <p className="text-sm text-slate leading-[1.68] font-light">Deposit your pay and choose how it gets released — weekly portions, monthly, or lock it for 6–12 months. Once locked, <strong className="text-foreground font-medium">you can't touch it early — that's the point</strong>. Long-term locks also earn you interest (up to 6.1% APY), so your savings actually grow while you wait.</p>
                 </div>
               </div>
               <div className="px-6 pb-5 flex gap-1.5 flex-wrap">
@@ -342,22 +342,22 @@ const Index = () => {
         <div className="max-w-[480px] md:max-w-[600px] mx-auto">
           <div className="text-center mb-10">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-mint-soft border border-mint-line font-mono text-[9px] font-semibold text-primary-dark tracking-[2.5px] uppercase mb-4">
-              Process
+              Getting Started
             </div>
             <h2 className="font-display text-[clamp(30px,7vw,44px)] font-extrabold tracking-[-1.5px] leading-[1.07] text-foreground mb-3.5">
-              Simple enough to start today.
+              Up and running in 5 minutes.
             </h2>
-            <p className="text-base font-light text-slate leading-[1.75]">Four steps. Fully automated after setup.</p>
+            <p className="text-base font-light text-slate leading-[1.75]">No crypto knowledge needed. No seed phrases. Just sign up and go.</p>
           </div>
 
           <div className="relative">
             <div className="absolute left-5 top-7 bottom-7 w-0.5 bg-gradient-to-b from-primary via-primary-dark to-primary rounded-full" />
             <div className="flex flex-col gap-0">
               {[
-                { num: '01', title: 'Create your account', body: 'Sign up with your phone number, complete KYC with BVN/NIN. Your embedded Base wallet is created automatically — no seed phrase required.' },
-                { num: '02', title: 'Deposit or redeem', body: 'Add USDC directly or upload an Amazon / Apple gift card. Automated pipeline verifies and credits your wallet in under 60 seconds.' },
-                { num: '03', title: 'Convert to Naira', body: 'Tap "Off-ramp" to convert USDC to NGN. Choose your bank and account. Receive funds in 2–5 minutes. Live exchange rate. Zero P2P risk.' },
-                { num: '04', title: 'Lock your salary', body: 'Deposit your monthly income and select weekly, monthly, 6-month, or 1-year lock. Hard-locked on Base. Earn 4.2–6.1% APY on long-term locks.' },
+                { num: '01', title: 'Sign up in seconds', body: 'Use your phone number to create an account. Verify your identity with BVN or NIN. We set up a secure wallet for you automatically — no complicated setup.' },
+                { num: '02', title: 'Add money or sell a gift card', body: 'Deposit USDC directly, or upload a gift card (Amazon, Apple, etc.). We verify it and credit your wallet in under 60 seconds.' },
+                { num: '03', title: 'Cash out to your bank', body: "Convert your balance to Naira and send it to any Nigerian bank account. You\u2019ll see the exact exchange rate upfront \u2014 no surprises." },
+                { num: '04', title: 'Set up auto-savings', body: "Choose how your money gets released \u2014 weekly, monthly, or lock it away for 6\u201312 months to earn interest. Build the savings habit you\u2019ve always wanted." },
               ].map((step, i) => (
                 <div key={step.num} className="flex items-start gap-5 relative pb-8 last:pb-0">
                   <div className="w-[42px] h-[42px] rounded-full bg-background border-2 border-primary flex items-center justify-center font-mono text-sm font-bold text-primary-dark shadow-[0_0_0_6px_rgba(0,217,139,0.08),0_4px_16px_rgba(0,217,139,0.2)] relative z-10 flex-shrink-0">
@@ -381,9 +381,9 @@ const Index = () => {
             Calculator
           </div>
           <h2 className="font-display text-[clamp(30px,7vw,44px)] font-extrabold tracking-[-1.5px] leading-[1.07] text-foreground mb-3.5">
-            See your money work.
+            See how your salary splits up.
           </h2>
-          <p className="text-base font-light text-slate leading-[1.75]">Enter your monthly salary. See how NexolPay distributes it.</p>
+          <p className="text-base font-light text-slate leading-[1.75]">Enter what you earn monthly. See exactly how much you get each week — and how much stays locked and growing.</p>
 
           <div className="bg-white/75 backdrop-blur-2xl border border-card-border rounded-3xl p-7 shadow-[var(--shadow)] mt-9">
             <div className="font-mono text-[10px] tracking-[2px] uppercase text-muted-foreground mb-3">Monthly Salary (USDC)</div>
@@ -417,7 +417,7 @@ const Index = () => {
               ))}
             </div>
             <p className="text-center text-[11px] text-muted-foreground mt-4 leading-relaxed">
-              6-month lock earns <strong className="font-mono">4.2% APY</strong> · 1-year lock earns <strong className="font-mono">6.1% APY</strong> on Base via Aave
+              Lock for 6 months and earn <strong className="font-mono">4.2% interest</strong> · Lock for a year and earn <strong className="font-mono">6.1% interest</strong> — your money grows while you wait
             </p>
           </div>
         </div>
@@ -431,10 +431,10 @@ const Index = () => {
             Built on Base L2
           </div>
           <h2 className="font-display text-[clamp(30px,8vw,44px)] font-extrabold tracking-[-1.5px] text-white leading-[1.07] mb-4">
-            Ethereum security.<br />Near-zero fees.
+            Bank-grade security.<br />Fraction-of-a-penny fees.
           </h2>
           <p className="text-[15px] text-white/45 leading-[1.72] font-light mb-12">
-            NexolPay settles on Base — Coinbase's L2 on Ethereum. Fast finality, sub-cent fees, fully EVM compatible.
+            Your money moves on Base — a secure blockchain network backed by Coinbase. Transactions cost less than ₦1, settle in seconds, and are protected by Ethereum's security.
           </p>
           <div className="flex gap-0.5">
             {[
@@ -459,7 +459,7 @@ const Index = () => {
               Pricing
             </div>
             <h2 className="font-display text-[clamp(30px,7vw,44px)] font-extrabold tracking-[-1.5px] leading-[1.07] text-foreground mb-3">
-              Transparent. No hidden fees.
+              Simple pricing. No surprises.
             </h2>
           </div>
 
@@ -474,9 +474,9 @@ const Index = () => {
                 20<sup className="text-[22px] tracking-normal">%</sup>
                 <span className="text-[15px] text-muted-foreground font-normal tracking-normal ml-1">per card</span>
               </div>
-              <p className="text-[13px] text-slate mb-[22px] leading-relaxed">Gift card redemption fee. Off-ramp is free. Vault is free.</p>
+              <p className="text-[13px] text-slate mb-[22px] leading-relaxed">We only charge when you sell gift cards. Everything else is free.</p>
               <div className="flex flex-col gap-2.5 mb-7">
-                {['60-second gift card redemption', 'Free crypto-to-Naira off-ramp', 'Income scheduler & vault', '4.2–6.1% APY on long-term locks'].map((f) => (
+                {['Sell gift cards and get paid in 60 seconds', 'Cash out crypto to your bank — free', 'Auto-savings vault with weekly payouts — free', 'Earn up to 6.1% interest on locked savings'].map((f) => (
                   <div key={f} className="flex items-center gap-2.5 text-sm text-slate">
                     <div className="w-5 h-5 rounded-full bg-mint-soft border border-mint-line flex items-center justify-center text-[9px] text-primary-dark font-bold flex-shrink-0">✓</div>
                     {f}
@@ -492,9 +492,9 @@ const Index = () => {
             <div className="flex-1 bg-white/75 backdrop-blur-2xl border border-card-border rounded-3xl p-7 hover:-translate-y-1 transition-transform duration-300">
               <div className="font-mono text-[10px] font-semibold text-muted-foreground tracking-[2px] uppercase mb-2">Enterprise</div>
               <div className="font-mono text-[52px] font-bold text-foreground tracking-[-3px] leading-none mb-1.5">Custom</div>
-              <p className="text-[13px] text-slate mb-[22px] leading-relaxed">Volume discounts for businesses and remittance partners.</p>
+              <p className="text-[13px] text-slate mb-[22px] leading-relaxed">For businesses processing large volumes or building on our platform.</p>
               <div className="flex flex-col gap-2.5 mb-7">
-                {['Everything in Standard', 'API access for integrations', 'Volume-based pricing', 'Dedicated account manager'].map((f) => (
+                {['Everything in Standard', 'Connect via API to your own apps', 'Lower fees based on volume', 'A dedicated person to help you'].map((f) => (
                   <div key={f} className="flex items-center gap-2.5 text-sm text-slate">
                     <div className="w-5 h-5 rounded-full bg-mint-soft border border-mint-line flex items-center justify-center text-[9px] text-primary-dark font-bold flex-shrink-0">✓</div>
                     {f}
@@ -507,7 +507,7 @@ const Index = () => {
             </div>
           </div>
           <p className="text-xs text-center text-muted-foreground mt-4 leading-relaxed">
-            Off-ramp and vault services are free. We only charge on gift card redemption.
+            Bank transfers and savings vault are completely free. The 20% fee only applies when selling gift cards.
           </p>
         </div>
       </section>
@@ -516,10 +516,10 @@ const Index = () => {
       <section id="waitlist" className="py-20 px-5 pb-[100px] relative z-10 text-center">
         <div className="max-w-[460px] mx-auto">
           <h2 className="font-display text-[clamp(34px,9vw,56px)] font-extrabold tracking-[-2px] leading-[1.03] text-foreground mb-4">
-            Join the <em className="not-italic text-primary-dark">financial revolution</em>
+            Be first to <em className="not-italic text-primary-dark">take control</em>
           </h2>
           <p className="text-base text-slate font-light leading-[1.65] mb-9">
-            Get early access when we launch. No spam. Just updates on our progress.
+            We're launching soon. Sign up now to get early access and exclusive perks — no spam, just real updates.
           </p>
 
           <div className="bg-white/75 backdrop-blur-2xl border-[1.5px] border-mint-line rounded-[20px] p-5 mb-5 shadow-[var(--shadow)] focus-within:border-primary focus-within:shadow-[0_0_0_4px_rgba(0,217,139,0.12),var(--shadow)] transition-all">
@@ -560,7 +560,7 @@ const Index = () => {
             NexolPay
           </div>
           <p className="text-[13px] text-white/30 mb-8 leading-relaxed max-w-md">
-            Financial infrastructure for West Africa. Gift cards to crypto. Crypto to Naira. Salary scheduling with yield.
+            The simplest way for Nigerians to sell gift cards, cash out crypto, and build real savings — all in one app.
           </p>
 
           <div className="flex gap-8 flex-wrap mb-8">
